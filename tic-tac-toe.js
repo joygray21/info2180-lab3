@@ -14,8 +14,16 @@ window.onload = function(e){
             console.log("check");
             console.log(e.target);
             //e.target.classList.remove('square');
-            e.target.classList.add('square.X');
-            e.target.innerHTML = "X";
+            if (index % 2 == 0){
+                //elem.classList.add('square.X');
+                e.target.classList.add('square.X');
+                e.target.innerHTML = "X";
+            }
+            else {
+                e.target.classList.add('square.O');
+                e.target.innerHTML = "O";
+            }
+            
     });
     });
 
